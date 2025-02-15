@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App NRoot</title>
+    <meta
+      name="description"
+      content="Weather App project made with HTML5, CSS3, JS and TS. Following the good practices propouse by W3C, ECMA and SEO."
+    />
+    <link
+      rel="shortcut icon"
+      href="public/favicon/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://github.com/nbglroot/" target="_blank">
+          <img
+            width="38px"
+            height="38px"
+            loading="lazy"
+            src="public/favicon/logo.png"
+            alt="icono de creador de app"
+          />
+        </a>
+        <p id="userDate"><i class="fa-solid fa-clock"></i></p>
+      </nav>
+    </header>
+    <main>
+      <section class="container header__form">
+        <form>
+          <label for="searchLocation">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input type="text" id="searchLocation" />
+          <div class="btn_group">
+            <button type="button" id="requestOutput">Buscar</button>
+          </div>
+        </form>
+        <button type="button" id="resetOutput">
+          <i class="fa-solid fa-rotate-left"></i>Resetear Busqueda
+        </button>
+      </section>
+      <section class="container output__section">
+        <!-- <input type="text" id="searchedLocation" readonly="true" /> -->
+        <textarea readonly="true" id="searchedLocation"></textarea>
+        <p id="iconTemp">
+          <i class="fa-solid fa-business-time"></i>
+        </p>
+        <p>
+          Temperatura Actual:
+          <span id="currentLocationWeatherOutput"></span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Naim Babanaceur García de Lara &copy; <span id="copyDate"></span></p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="src/js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/259098186a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
