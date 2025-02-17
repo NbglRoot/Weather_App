@@ -100,5 +100,4 @@ function clearReport() {
   const iconNotResult: string = '<i class="fa-solid fa-business-time"></i>';
   iconTempOutput.innerHTML = iconNotResult;
   weatherOutput.innerText = "";
-  location.reload();
 }

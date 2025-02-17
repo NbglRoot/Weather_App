@@ -143,5 +143,4 @@ function clearReport() {
     var iconNotResult = '<i class="fa-solid fa-business-time"></i>';
     iconTempOutput.innerHTML = iconNotResult;
     weatherOutput.innerText = "";
-    location.reload();
 }
